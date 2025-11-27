@@ -1,7 +1,9 @@
-# . 🧬 Genova-AI — Variant Effect Predictor with Evo2
-Revolutionizing Genetic Analysis Using AI-Powered Pathogenicity Prediction
+# .🧬 Genescope AI / Genova AI
+Full-stack AI-driven platform built with Next.js + FastAPI + Modal GPU, running Evo2 genomic LLM to interpret genetic mutations and classify pathogenicity with high accuracy.
+🚀 Overview
 
-FastAPI · Next.js · Modal GPU · Python · Evo2 Genomic LLM
+# . Genescope AI (Genova AI) is an advanced genomic intelligence platform designed to accelerate precision medicine by predicting the clinical impact of DNA variants in real time.
+Using Evo2 — a state-of-the-art genomic foundation model, the system analyzes the pathogenic probability of mutations and assists clinicians & biotech researchers in diagnosing rare diseases faster and more accurately.
 Built for Hack O Spider — Pioneering Healthcare Innovation Through AI
 👉 https://builder.trikaya.io/hackathons/b7784649-a17f-43eb-92ee-9b25f086a2d9
 <div align="center">
