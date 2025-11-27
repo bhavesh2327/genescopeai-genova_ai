@@ -1,5 +1,9 @@
-# 🧬 Genova-AI: Variant Effect Predictor with Evo2
+# . 🧬 Genova-AI — Variant Effect Predictor with Evo2
+Revolutionizing Genetic Analysis Using AI-Powered Pathogenicity Prediction
 
+FastAPI · Next.js · Modal GPU · Python · Evo2 Genomic LLM
+Built for Hack O Spider — Pioneering Healthcare Innovation Through AI
+👉 https://builder.trikaya.io/hackathons/b7784649-a17f-43eb-92ee-9b25f086a2d9
 <div align="center">
 
 ![Genova-AI](https://img.shields.io/badge/Genova%20AI-VARIANT%20EFFECT%20PREDICTOR-800080?style=for-the-badge) 
@@ -7,7 +11,6 @@
 ![Next.js](https://img.shields.io/badge/NEXT.JS-FRONTEND-000000?style=for-the-badge) 
 ![Modal](https://img.shields.io/badge/MODAL-GPU%20CLOUD-007FFF?style=for-the-badge) 
 ![Python](https://img.shields.io/badge/PYTHON-3.12-20B2AA?style=for-the-badge) 
-![Hack O Spider](https://img.shields.io/badge/MADE%20FOR-HackOSpider-FFA500?style=for-the-badge)
 
 </div>
 <div align="center">
@@ -18,8 +21,7 @@ _An AI-powered platform revolutionizing genetic analysis by predicting the patho
 
 ##  "Built for Hack O Spider - Pioneering Healthcare Innovation Through AI"
 
-### [**🚀 Live DEMO**](https://frontend-genova-eykw.vercel.app)      [**📊 Research Paper Used**](https://www.biorxiv.org/content/10.1101/2025.02.18.638918v1)   [**📖 Presentation**](https://drive.google.com/file/d/18FRpQzu_IPNENQcQpEYUEGKmQ6WLrhf3/view?usp=sharing)
-
+### [**🚀 Live DEMO**](https://frontend-genova-eykw.vercel.app)      [**📊 Research Paper Used**](https://www.biorxiv.org/content/10.1101/2025.02.18.638918v1)  
 </div>
 
 ---
@@ -36,8 +38,7 @@ _An AI-powered platform revolutionizing genetic analysis by predicting the patho
 -   [🚀 Getting Started](#-getting-started)
 -   [🏗️ Project Structure](#️-project-structure)
 -   [🔬 Scientific Background](#-scientific-background)
--   [🙏 Acknowledgments](#-acknowledgments)
--   [⚠️ IMPORTANT DEPLOYMENT NOTICE](#️-important-deployment-notice-️)
+-  
 
 ---
 
@@ -349,24 +350,4 @@ Our validation follows clinical genetics best practices:
 
 </div>
 
-## ⚠️ **IMPORTANT DEPLOYMENT NOTICE** ⚠️
 
-<div align="center">
-
-> **🚨 ATTENTION: Limited Demo Credits Available on Modal.com 🚨**
-
-</div>
-
-<div align="center">
-
-🚨 Our live demo is running on a limited number of free credits on Modal.com 🚨
-
-## About "Cold Starts"
-The very first analysis after a period of inactivity will experience a "cold start" and may take 40-60 seconds. This is because the serverless container needs to spin up a GPU.
-
-Subsequent analyses will be extremely fast (2-3 seconds). Please be patient on your first try!
-
-If the demo credits are exhausted, the API will not function. Please contact us at ayushkumr1991@gmail.com, and we will gladly provide a new endpoint. Thank you for your understanding!
-</div>
-
-</div>
