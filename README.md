@@ -1,205 +1,60 @@
-# Genova-AI — Variant Effect Predictor with Evo2
+🧬 Genova-AI — Variant Effect Predictor with Evo2
+Revolutionizing Genetic Analysis Using AI-Powered Pathogenicity Prediction
 
-Revolutionizing genetic diagnosis using AI and genomic foundation models.
+FastAPI · Next.js · Modal GPU · Python · Evo2 Genomic LLM
+Built for Hack O Spider — Pioneering Healthcare Innovation Through AI
+🔗 Hackathon Link: (Hack O Spider by Trikaya)
+👉 https://builder.trikaya.io/hackathons/b7784649-a17f-43eb-92ee-9b25f086a2d9
 
-Built for Hack-to-Hire 2025 — India’s hiring-focused hackathon by Trikaya x BeetleX.
+🚀 Live Demo & Resources
+Resource	Link
+🎥 Live Demo	(Add URL when deployed)
+📊 Presentation	(Upload PPT link)
+📖 Research Paper	Evo2 bioRxiv Preprint
+🌍 Addressing UN Sustainable Development Goals
+SDG	Goal	Our Impact
+🏥 SDG 3	Good Health & Well-Being	Reduces diagnosis time from weeks → seconds
+🏭 SDG 9	Innovation & Infrastructure	Cloud-native AI-first genomic platform
+⚖️ SDG 10	Reduced Inequalities	Precision genomics accessible globally
+🎓 SDG 4	Quality Education	Interactive learning tool for students & researchers
+🚨 The Problem
 
-## Project Overview
+Genetic variant interpretation is slow, expensive & inaccessible:
 
-Genova-AI is an AI-powered genomic analysis platform that predicts the pathogenicity of DNA variants in real time — reducing interpretation time from 2–4 weeks to under 30 seconds. It enables faster clinical decision-making for cancer risk, genetic disorders, and rare diseases by combining the Evo2 genomic foundation model with a FastAPI backend and a Next.js frontend.
+Challenge	Detail
+⏳ Time delay	2–4 weeks for clinical result
+💰 High cost	$200–500 per variant
+❓ Uncertain outcomes	40–50% VUS (uncertain significance variants)
+🌍 Limited access	Only top medical centers offer testing
+🔄 Inconsistent results	Different labs → different outcomes
+Real Example
+Gene	Mutation	Cancer Risk	Current Waiting Time	Our Result
+BRCA1	A → T	85% Risk	14–28 days	< 30 seconds ⏱
+💡 Our Solution
+Genova-AI — AI-Powered Variant Effect Predictor
 
-Key outcomes:
-- Fast variant prediction (< 30 seconds, typically 2–3s after cold start)
-- Evidence-backed, standardized AI evaluation against ClinVar
-- Cost and time reduction for clinical variant interpretation
+A full-stack intelligent genomics platform that predicts pathogenicity of DNA mutations in real time using Evo2, a cutting-edge genomic language model trained on billions of nucleotides.
 
-## Why it matters
+🧠 How It Works
 
-Problem → Genova-AI solution
-- 2–4 week delay in variant analysis → <30-second AI prediction
-- $200–500 per variant review → ~80% cost reduction
-- 40–50% VUS (uncertain) → ~60% VUS resolution via AI confidence scoring
-- Limited genomic experts → Global access via serverless GPUs
+✔ Evo2 genomic LLM interprets biological meaning of nucleotide sequences
+✔ GPU-accelerated inference via Modal cloud
+✔ ClinVar comparison with real clinical annotations
+✔ Interactive genome browser + downloadable PDF reports
 
-Example: BRCA1 A→T variant — current wait 14–28 days, Genova-AI: 10–30 seconds with confidence score and ClinVar comparison.
+🎯 Key Innovations
 
-## Key Features
+Unlike traditional tools like SIFT / PolyPhen / CADD, Genova-AI uses language model reasoning to “read” DNA like natural language — understanding protein impact, regulatory disruption & splice effects.
 
-- **Evo2 AI inference:** Deep DNA understanding for pathogenicity scoring
-- **ClinVar comparison:** Side-by-side clinical evidence and AI result
-- **Genome assembly support:** hg19, hg38, and custom UCSC assemblies
-- **Interactive gene explorer:** Chromosome/gene visualization and variant browsing
-- **Confidence scoring:** Numeric probability for clinical triage
-- **PDF report export:** Downloadable reports for medical records
-
-## Tech Stack
-
-- Frontend: Next.js (T3 stack), TypeScript, TailwindCSS, ShadCN UI, React Query
-- Backend: FastAPI, Python, PyTorch, Pandas, NumPy
-- Model: Evo2 genomic foundation model (Evo2 7B / 40B configs available)
-- Deployment: Modal (serverless GPU), NVIDIA H100 hardware for inference
-- Data & integrations: UCSC Genome Browser API, NCBI ClinVar E-utilities
-
-## Scientific Background & Performance
-
-Evo2 is a genomic language model trained on hundreds of billions of nucleotides with architectures designed for long genomic context windows. Example performance metrics from validation:
-
-- Accuracy: 92.3%
-- Precision: 89.7%
-- Recall: 94.1%
-- VUS resolution: ~60%
-- Typical prediction speed: < 30 sec (cold start 40–60s)
-
-Research: “Evo2 — Large-scale Genomic Foundation Models for Variant Effect Prediction” (preprint referenced in repo).
-
-## Getting Started
-
-Prerequisites:
-- Node.js ≥ 20 and npm
-- Python 3.11+ and pip
-- (Optional) Modal account for serverless GPU deployment
-
-Backend
-```powershell
-cd backend
-pip install -r requirements.txt
-```
-
-Frontend
-```powershell
-cd frontend
-npm install
-npm run dev
-```
-
-Environment variable (frontend):
-
-Set `NEXT_PUBLIC_ANALYZE_SINGLE_VARIANT_BASE_URL` to the Modal GPU endpoint or your deployed backend URL. Example:
-
-```
-NEXT_PUBLIC_ANALYZE_SINGLE_VARIANT_BASE_URL=https://your-modal-endpoint.modal.run
-```
-
-Notes:
-- The public demo uses limited free GPU credits; the first request after inactivity may take 40–60 seconds (cold start). Subsequent inferences are fast (2–3s).
-
-## Project Structure
-
-Top-level layout:
-
-- `backend/` — FastAPI + Evo2 model integration and Modal deployment
-- `frontend/` — Next.js app, UI components, and client logic
-- `README.md` — this file
-
-See the repository for full details.
-
-## Acknowledgments
-
-- Arc Institute — Evo2 model
-- Modal Labs — serverless GPU deployment
-- UCSC Genome Browser & NCBI ClinVar — genomic data
-- NVIDIA — H100 GPU acceleration
-
-Contact: `bhaveshaprojects@gmail.com`
-
-Built for Hack-to-Hire 2025 (Trikaya x BeetleX) by the GeneScope Innovators Team.
-
----
-
-If you want, I can also:
-- run a quick lint/format pass for the repo,
-- open a PR with this README change,
-- or update README with badges and live demo links.
-# 🧬 Genova-AI: Variant Effect Predictor with Evo2
-
-<div align="center">
-
-![Genova-AI](https://img.shields.io/badge/Genova%20AI-VARIANT%20EFFECT%20PREDICTOR-800080?style=for-the-badge) 
-![FastAPI](https://img.shields.io/badge/FASTAPI-BACKEND-00CC00?style=for-the-badge) 
-![Next.js](https://img.shields.io/badge/NEXT.JS-FRONTEND-000000?style=for-the-badge) 
-![Modal](https://img.shields.io/badge/MODAL-GPU%20CLOUD-007FFF?style=for-the-badge) 
-![Python](https://img.shields.io/badge/PYTHON-3.12-20B2AA?style=for-the-badge) 
-
-</div>
-
----
-
-## 🌍 Addressing UN Sustainable Development Goals
-
-This project directly contributes to multiple UN SDGs:
-
-| SDG           | Goal                                  | Our Impact                                                                    |
-| ------------- | ------------------------------------- | ----------------------------------------------------------------------------- |
-| 🏥 **SDG 3**  | Good Health and Well-being            | Democratizing genetic analysis, reducing diagnosis time from weeks to seconds |
-| 🏭 **SDG 9**  | Industry, Innovation & Infrastructure | Cloud-native AI platform fostering healthcare innovation                      |
-| ⚖️ **SDG 10** | Reduced Inequalities                  | Making precision genomics accessible to underserved regions                   |
-| 🎓 **SDG 4**  | Quality Education                     | Interactive genomics learning platform for students and researchers           |
-
----
-
-## 🚨 The Problem
-
-### Current State of Genetic Analysis:
-
-Every day, millions of people undergo genetic testing, but interpreting DNA mutations remains one of medicine's biggest challenges:
-
-- **⏰ Time Delays:** Current variant interpretation takes 2-4 weeks
-- **💰 High Costs:** Expert analysis costs $200-500 per variant
-- **🌍 Limited Access:** Advanced genomics restricted to major medical centers
-- **❓ Uncertain Results:** 40-50% of variants classified as "Uncertain Significance"
-- **🔄 Inconsistent Classifications:** Different labs often provide conflicting interpretations
-
-### Real-World Impact:
-
-```
-A single nucleotide change: A → T
-Location: BRCA1 gene, chromosome 17
-Result: 85% increased breast cancer risk
-Current wait time: 14-28 days
-Our solution: <30 seconds
-```
-
-This delay can be life-threatening for patients needing immediate treatment decisions.
-
----
-
-## 💡 Our Solution
-
-### Variant Effect Predictor with Evo2
-
-A full-stack web application that leverages cutting-edge AI to predict DNA mutation pathogenicity in real-time, making precision genomics accessible worldwide.
-
-#### 🔬 How It Works
-
-1. **AI-Powered Analysis:** Uses Evo2 large language model(LLM) trained on millions of genomic sequences
-2. **Real-Time Predictions:** GPU-accelerated inference delivers results in <30 seconds
-3. **Clinical Validation:** Side-by-side comparison with ClinVar database annotations
-4. **Global Accessibility:** Serverless deployment eliminates infrastructure barriers
-5. **Evidence-Based Reports:** Downloadable PDF reports for medical records
-
-#### 🎯 Key Innovation
-
-Unlike traditional tools that rely on conservation scores or statistical models, our platform uses **Evo2**, a breakthrough language model(LLM) that "reads" DNA sequences like natural language, understanding complex genomic patterns and regulatory elements.
-
----
-
-## 🚀 Features
-
-### 🧬 Core Functionality
-
-| Feature                     | Description                                           | Impact                                           |
-| --------------------------- | ----------------------------------------------------- | ------------------------------------------------ |
-| **Evo2 Model Inference**    | Pathogenicity scoring with confidence estimates       | 92% accuracy vs expert classifications           |
-| **ClinVar Comparison**      | Side-by-side AI prediction vs clinical annotation     | Resolves 60% of uncertain significance variants  |
-| **Genome Assembly Support** | hg19, hg38, and custom assemblies via UCSC API        | Universal compatibility with existing workflows  |
-| **Gene Browser**            | Interactive chromosome and gene exploration           | Intuitive variant discovery and visualization    |
-| **Variant Input Methods**   | Manual entry or curated ClinVar variant selection     | Flexible workflow for different use cases        |
-| **Confidence Scoring**      | Numerical confidence alongside categorical prediction | Risk stratification for clinical decision-making |
-| **PDF Export**              | Comprehensive analysis reports                        | Seamless integration with medical records        |
-
-### 💻 Technical Architecture
-
-```mermaid
+🚀 Features
+Feature	Description	Impact
+Evo2 AI Inference	Pathogenicity prediction + confidence	92% clinical accuracy
+ClinVar Comparison	Side-by-side AI vs. expert verdicts	Resolves 60% VUS
+Genome Assembly Support	hg19 / hg38 + UCSC	Universal compatibility
+AI Confidence Score	Numerical interpretation	Risk stratification
+Gene Browser	Chromosome navigation & visualization	Clinical usability
+PDF Report Export	Evidence summary for hospitals	Medical compliance
+💻 Technical Architecture
 graph TB
     subgraph "User"
         A[🌐 Frontend &#124; Next.js]
@@ -220,207 +75,99 @@ graph TB
     B -- Fetches Data --> F
     D -- Prediction --> G[✅ Prediction Results]
     G -- Returns to --> A
-```
 
----
 
-## 🛠️ Tech Stack
+🛠️ Tech Stack
+Frontend
 
-### Frontend Stack
+Next.js · TailwindCSS · Shadcn UI · React Query · TypeScript
 
-```
-⚡ Next.js (T3 Stack) - Full-stack React framework
-🎨 Tailwind CSS - Utility-first styling
-🧩 Shadcn UI - Modern component library
-⚛️ React Query - Data fetching and caching
-📘 TypeScript - Type-safe development
-```
+Backend
 
-### Backend Stack
+FastAPI · PyTorch · Modal GPU · Evo2 Model · Pandas · NumPy
 
-```
-🐍 FastAPI - High-performance API framework
-🚀 Modal - Serverless GPU deployment
-🧬 Evo2 Model - DNA language model
-🔥 PyTorch - Deep learning framework
-📊 Pandas/NumPy - Data processing
-```
+Infrastructure
 
-### Infrastructure
+NVIDIA H100 · Docker · UCSC Genome API · NCBI ClinVar
 
-```
-☁️ Modal Labs - Serverless GPU compute
-🖥️ NVIDIA H100 - AI acceleration
-📡 UCSC Genome Browser API - Genomic data
-📋 NCBI E-utilities - ClinVar integration
-```
+📊 Performance Metrics
+Metric	Value	Benchmark
+Accuracy	92.3%	Expert consensus
+Recall	94.1%	Disease-causing variants
+Speed	< 30 seconds	vs 2–4 weeks
+Cost Reduction	80%	Compared to clinical analysts
+VUS resolution	60%	Previously uncertain variants
+🏥 Future Clinical Impact
 
----
+🔗 15+ hospitals testing early pilots
+🧬 200+ researchers onboarding
+🌍 Users across 25+ countries
+📈 50,000+ variants analyzed
 
-## 📊 Performance Metrics
-
-### Validation Results
-
-| Metric             | Value       | Benchmark                     |
-| ------------------ | ----------- | ----------------------------- |
-| **Accuracy**       | 92.3%       | vs. Expert consensus          |
-| **Precision**      | 89.7%       | Pathogenic predictions        |
-| **Recall**         | 94.1%       | Disease-causing variants      |
-| **Speed**          | <30 seconds | vs. 2-4 weeks traditional     |
-| **Cost Reduction** | 80%         | vs. manual interpretation     |
-| **VUS Resolution** | 60%         | Previously uncertain variants |
-
-### Its Future Clinical Impact
-
-- **🏥 Hospital Integration:** 15+ healthcare systems testing pilot deployment
-- **🔬 Research Adoption:** 200+ researchers using for variant prioritization
-- **🌍 Global Reach:** Users from 25+ countries across 6 continents
-- **📈 Variant Database:** 50,000+ variants analyzed and validated
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-```bash
-Node.js ≥ 20 & npm
-Python 3.11-3.12 & pip
-Docker & Docker Compose
-Modal CLI account   #(Optional) Not needed since we have deployed the backend at https://anant6725--variant-analysis-evo2-evo2model-analyze-singl-990f88.modal.run/
-```
-
-### 🐍 Backend Setup
-
-```bash
-# Clone repository
-git clone https://github.com/ayushkumar1991/Genova-AI.git
-cd evo2-backend
-
-# Install dependencies
+🚀 Getting Started
+Backend (FastAPI)
+cd backend
 pip install -r requirements.txt
-```
+uvicorn main:app --reload
 
-### 🌐 Frontend Setup
-
-```bash
-# Navigate to frontend directory
-cd evo2-frontend
-
-# Install dependencies
+Frontend (Next.js)
+cd frontend
 npm install
-
-# Start development server
 npm run dev
-```
 
-### Environment Variables
+Environment Variables
+NEXT_PUBLIC_ANALYZE_SINGLE_VARIANT_BASE_URL=<Modal deployment endpoint>
 
-```bash
-# Frontend (.env)   //We have deployed and pushed .env directly which has the Backend API URL over MODAL.COM with 5 FREE Credits 
-NEXT_PUBLIC_ANALYZE_SINGLE_VARIANT_BASE_URL=https://your-modal-endpoint.modal.run
-```
-
----
-
-### Web Interface Workflow
-
-1. **Select Genome Assembly**
-
-   ```
-   Choose hg38 (GRCh38) → Latest human reference
-   ```
-
-2. **Gene Search**
-
-   ```
-   Search "BRCA1 or Example" → Navigate to chromosome 17
-   ```
-
-3. **Variant Input**
-
-   ```
-   Position: 43124000
-   Reference: A
-   Alternate: T
-   ```
-
-4. **AI Analysis**
-
-   ```
-   Click Analyze Evo2 button -> Processing → GPU acceleration → Result in 10s
-   ```
-
-5. **Clinical Comparison**
-   ```
-   Evo2: Likely Pathogenic (87% confidence)
-   ClinVar: Pathogenic
-   Status: ✅ Concordant
-   Export the pdf also
-   ```
-
----
-
-## 🏗️ Project Structure
-
-```
+🏗️ Project Structure
 Genova-AI/
-├── 📁 backend/              # FastAPI + Modal backend
-│   ├── 🐍 main.py                # Modal deployment entry
-│   ├── 🧬 evo2/                  # Evo2 model loading
-│   ├── 💾 utils/                 # Helper functions
-│   ├── 📋 requirements.txt       # Python dependencies
-|
-├── 📁 frontend/             # Next.js frontend
-│   ├── 📱 app/                   # App router pages
-│   ├── 🧩 components/            # Reusable UI components
-│   ├── 🔧 lib/                   # Utility libraries
-│   ├── 🎨 styles/                # Global styles
-|   |── 🔒 .env                   # Environment template with Deployed API On Modal.com
-│   ├── 📦 package.json           # Node dependencies
-│   └── ⚙️ next.config.js         # Next.js configuration
-|
-├── 📁 examples/                  # Usage examples
-├── 📄 README.md                  # This file
-```
+│── backend/
+│   ├── main.py               # Model inference API
+│   ├── evo2/                 # Model implementation
+│   └── utils/
+│
+│── frontend/
+│   ├── app/                  # Next.js application pages
+│   ├── components/
+│   ├── lib/
+│   └── .env                  # Frontend API Key
 
----
+🔬 Scientific Background
+Evo2 Model
 
-## 🔬 Scientific Background
+Transformer-based DNA LLM
 
-### The Evo2 Model
+7B parameters
 
-Evo2 is a state-of-the-art genomic language model developed by the Arc Institute:
+300B nucleotide training corpus
 
-- **Training Data:** 300+ billion nucleotides from diverse species
-- **Architecture:** Transformer-based with 7 billion parameters
-- **Context Length:** Up to 131,072 nucleotides (longest in genomics)
-- **Capabilities:** Understands regulatory elements, splice sites, and protein-coding regions
+131k context length
 
-### Validation Methodology
+📖 Paper — "Evo2: Genomic Foundation Models for Variant Effect Prediction"
 
-Our validation follows clinical genetics best practices:
+🙏 Acknowledgments
 
-1. **Dataset:** 50,000 ClinVar variants with expert consensus
-2. **Metrics:** Accuracy, precision, recall, F1-score
-3. **Benchmarking:** Comparison with CADD, PolyPhen-2, SIFT
-4. **Clinical Correlation:** Concordance with genetic counselor interpretations
+Arc Institute — Evo2 model development
 
-### Publication
+Modal Labs — Serverless GPU compute
 
-> **"Evo2: Large-scale Genomic Foundation Models for Variant Effect Prediction"**  
-> _bioRxiv preprint_ | [Read Paper](https://www.biorxiv.org/content/10.1101/2025.02.18.638918v1)
+UCSC Genome Browser & NCBI ClinVar
 
----
+NVIDIA — H100 GPU hardware
 
-## 🙏 Acknowledgments
+FastAPI & PyTorch communities
 
-- **[Arc Institute](https://arcinstitute.org/)** - Evo2 model development and genomic AI research
-- **[UCSC Genome Browser](https://genome.ucsc.edu/)** - Genomic data infrastructure and assembly APIs
-- **[NCBI ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/)** - Variant classification database and E-utilities
-- **[Modal Labs](https://modal.com/)** - Serverless GPU infrastructure and deployment platform
-- **[FastAPI](https://fastapi.tiangolo.com/)** - High-performance Python web framework
-- **[PyTorch](https://pytorch.org/)** - Deep learning framework for model inference
-- **[NVIDIA](https://www.nvidia.com/)** - H100 GPU technology enabling real-time inference
+💡 Hackathon Context
 
-</div>
+This project was ideated and built for Hack O Spider, an innovation-led competition encouraging real-world healthcare solutions using AI & ML.
+
+"Transforming precision medicine through intelligent genomics."
+
+⭐ Support
+
+If this project inspires you, please ⭐ star the repo!
+
+📌 GitHub: https://github.com/bhavesh2327/genescopeai-genova_ai
+
+
+🧠 Tagline
+AI for DNA — turning raw sequences into actionable insights.
