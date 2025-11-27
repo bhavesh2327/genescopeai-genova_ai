@@ -1,3 +1,115 @@
+# Genova-AI — Variant Effect Predictor with Evo2
+
+Revolutionizing genetic diagnosis using AI and genomic foundation models.
+
+Built for Hack-to-Hire 2025 — India’s hiring-focused hackathon by Trikaya x BeetleX.
+
+## Project Overview
+
+Genova-AI is an AI-powered genomic analysis platform that predicts the pathogenicity of DNA variants in real time — reducing interpretation time from 2–4 weeks to under 30 seconds. It enables faster clinical decision-making for cancer risk, genetic disorders, and rare diseases by combining the Evo2 genomic foundation model with a FastAPI backend and a Next.js frontend.
+
+Key outcomes:
+- Fast variant prediction (< 30 seconds, typically 2–3s after cold start)
+- Evidence-backed, standardized AI evaluation against ClinVar
+- Cost and time reduction for clinical variant interpretation
+
+## Why it matters
+
+Problem → Genova-AI solution
+- 2–4 week delay in variant analysis → <30-second AI prediction
+- $200–500 per variant review → ~80% cost reduction
+- 40–50% VUS (uncertain) → ~60% VUS resolution via AI confidence scoring
+- Limited genomic experts → Global access via serverless GPUs
+
+Example: BRCA1 A→T variant — current wait 14–28 days, Genova-AI: 10–30 seconds with confidence score and ClinVar comparison.
+
+## Key Features
+
+- **Evo2 AI inference:** Deep DNA understanding for pathogenicity scoring
+- **ClinVar comparison:** Side-by-side clinical evidence and AI result
+- **Genome assembly support:** hg19, hg38, and custom UCSC assemblies
+- **Interactive gene explorer:** Chromosome/gene visualization and variant browsing
+- **Confidence scoring:** Numeric probability for clinical triage
+- **PDF report export:** Downloadable reports for medical records
+
+## Tech Stack
+
+- Frontend: Next.js (T3 stack), TypeScript, TailwindCSS, ShadCN UI, React Query
+- Backend: FastAPI, Python, PyTorch, Pandas, NumPy
+- Model: Evo2 genomic foundation model (Evo2 7B / 40B configs available)
+- Deployment: Modal (serverless GPU), NVIDIA H100 hardware for inference
+- Data & integrations: UCSC Genome Browser API, NCBI ClinVar E-utilities
+
+## Scientific Background & Performance
+
+Evo2 is a genomic language model trained on hundreds of billions of nucleotides with architectures designed for long genomic context windows. Example performance metrics from validation:
+
+- Accuracy: 92.3%
+- Precision: 89.7%
+- Recall: 94.1%
+- VUS resolution: ~60%
+- Typical prediction speed: < 30 sec (cold start 40–60s)
+
+Research: “Evo2 — Large-scale Genomic Foundation Models for Variant Effect Prediction” (preprint referenced in repo).
+
+## Getting Started
+
+Prerequisites:
+- Node.js ≥ 20 and npm
+- Python 3.11+ and pip
+- (Optional) Modal account for serverless GPU deployment
+
+Backend
+```powershell
+cd backend
+pip install -r requirements.txt
+```
+
+Frontend
+```powershell
+cd frontend
+npm install
+npm run dev
+```
+
+Environment variable (frontend):
+
+Set `NEXT_PUBLIC_ANALYZE_SINGLE_VARIANT_BASE_URL` to the Modal GPU endpoint or your deployed backend URL. Example:
+
+```
+NEXT_PUBLIC_ANALYZE_SINGLE_VARIANT_BASE_URL=https://your-modal-endpoint.modal.run
+```
+
+Notes:
+- The public demo uses limited free GPU credits; the first request after inactivity may take 40–60 seconds (cold start). Subsequent inferences are fast (2–3s).
+
+## Project Structure
+
+Top-level layout:
+
+- `backend/` — FastAPI + Evo2 model integration and Modal deployment
+- `frontend/` — Next.js app, UI components, and client logic
+- `README.md` — this file
+
+See the repository for full details.
+
+## Acknowledgments
+
+- Arc Institute — Evo2 model
+- Modal Labs — serverless GPU deployment
+- UCSC Genome Browser & NCBI ClinVar — genomic data
+- NVIDIA — H100 GPU acceleration
+
+Contact: `bhaveshaprojects@gmail.com`
+
+Built for Hack-to-Hire 2025 (Trikaya x BeetleX) by the GeneScope Innovators Team.
+
+---
+
+If you want, I can also:
+- run a quick lint/format pass for the repo,
+- open a PR with this README change,
+- or update README with badges and live demo links.
 # 🧬 Genova-AI: Variant Effect Predictor with Evo2
 
 <div align="center">
