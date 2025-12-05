@@ -21,7 +21,7 @@ Using Evo2 — a state-of-the-art genomic foundation model, the system analyzes 
 _An AI-powered platform revolutionizing genetic analysis by predicting the pathogenicity of DNA variants in seconds, not weeks._
 
 
-##  "Built for Hack O Spider - Pioneering Healthcare Innovation Through AI"
+
 
 ### [**🚀 Live DEMO**](https://frontend-genova-eykw.vercel.app)      [**📊 Research Paper Used**](https://www.biorxiv.org/content/10.1101/2025.02.18.638918v1)  
 </div>
