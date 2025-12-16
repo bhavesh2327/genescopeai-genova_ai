@@ -5,7 +5,7 @@ Full-stack AI-driven platform built with Next.js + FastAPI + Modal GPU, running 
 # . Genescope AI (Genova AI) is an advanced genomic intelligence platform designed to accelerate precision medicine by predicting the clinical impact of DNA variants in real time.
 Using Evo2 — a state-of-the-art genomic foundation model, the system analyzes the pathogenic probability of mutations and assists clinicians & biotech researchers in diagnosing rare diseases faster and more accurately.
 
-# BuILD FINAL FOR TRIKAYA HACKTHON Hack to hire at the Nokia office Bangalore
+# BuILD FINAL FOR TRIKAYA HACKTHON Hack to hire at the Nokia office Bangalore   
 
 ![Genova-AI](https://img.shields.io/badge/Genova%20AI-VARIANT%20EFFECT%20PREDICTOR-800080?style=for-the-badge) 
 ![FastAPI](https://img.shields.io/badge/FASTAPI-BACKEND-00CC00?style=for-the-badge) 
